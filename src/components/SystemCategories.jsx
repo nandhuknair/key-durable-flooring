@@ -18,11 +18,6 @@ const SystemCategories = () => {
         { icon: <FaWalking />, name: 'Jogging Tracks' },
         { icon: <FaBicycle />, name: 'Cycling Tracks' },
         { icon: <FaWater />, name: 'Splash Parks / Water Park' },
-        { icon: <FaChessKnight />, name: 'Equestrian Floorings' }, // Using ChessKnight as proxy for Horse
-        { icon: <FaIndustry />, name: 'Industrial Floorings' },
-        { icon: <FaPaintBrush />, name: 'Democratic Flooring' }, // "Indoor & Outdoor Decorative"
-        { icon: <FaTools />, name: 'Renovation Systems' },
-        { icon: <FaStar />, name: 'Specialized Systems' },
         { icon: <FaLayerGroup />, name: 'EPDM Flooring' },
     ];
 

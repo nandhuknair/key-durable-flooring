@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaRunning, FaBasketballBall, FaDumbbell, FaWater } from 'react-icons/fa';
+import { FaRunning, FaBasketballBall, FaChild } from 'react-icons/fa';
 
 const WhatWeDo = () => {
     const services = [
@@ -15,9 +15,9 @@ const WhatWeDo = () => {
             desc: 'Distributing top-tier acrylic and PU systems for indoor/outdoor courts.'
         },
         {
-            icon: <FaWater />,
-            title: 'Splash Park Materials',
-            desc: 'Safe, colorful, and non-slip surfaces for water play areas.'
+            icon: <FaChild />,
+            title: 'Playground Flooring',
+            desc: 'Safe and durable impact-absorbing surfaces for play areas.'
         }
     ];
 

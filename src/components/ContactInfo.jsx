@@ -21,7 +21,7 @@ const ContactInfo = () => {
         {
             icon: <FaClock />,
             title: 'Working Hours',
-            details: ['Mon - Sat: 9:30 AM - 6:30 PM','Sat: Closed','Sun: Closed']
+            details: ['Mon - Sat: 9:30 AM - 6:30 PM', 'Sat: Closed', 'Sun: Closed']
         }
     ];
 
@@ -76,13 +76,17 @@ const ContactInfo = () => {
                 color: '#666'
             }}>
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.48129465696!2d77.06889966144883!3d28.527329294862522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
                     width="100%"
                     height="100%"
+                    id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=86%2F1%2C%20208%20SFS%20COLONY%2C%202ND%20MAIN%20ROAD%2C%20YELAHANKA%20NEW%20TOWN%2C%20BENGALURU%20560064&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    frameBorder="0"
+                    scrolling="no"
+                    marginHeight="0"
+                    marginWidth="0"
                     style={{ border: 0 }}
                     allowFullScreen=""
                     loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
                     title="Map"
                 ></iframe>
             </div>

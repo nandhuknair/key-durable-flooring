@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-    FaBraille, FaDotCircle, FaRecycle, FaScroll,
-    FaThLarge, FaFlask, FaVial, FaIndustry,
-    FaPaintRoller, FaHardHat, FaPalette
+    FaBraille, FaFlask, FaVial, FaPaintRoller, FaLayerGroup
 } from 'react-icons/fa';
 import Button from './Button';
 
@@ -12,16 +10,10 @@ const ProductCategories = () => {
 
     const products = [
         { icon: <FaBraille />, name: 'EPDM Granules' },
-        { icon: <FaDotCircle />, name: 'TPV Granules' },
-        { icon: <FaRecycle />, name: 'SBR Granules' },
-        { icon: <FaScroll />, name: 'Prefabricated Shock-Pads' },
-        { icon: <FaThLarge />, name: 'Rubber Tiles' },
         { icon: <FaFlask />, name: 'PU Binders' },
         { icon: <FaVial />, name: 'PU Sports Flooring Materials' },
-        { icon: <FaIndustry />, name: 'PU Industrial Flooring Materials' },
         { icon: <FaPaintRoller />, name: 'Acrylic Sports Flooring Materials' },
-        { icon: <FaHardHat />, name: 'Epoxy Industrial Flooring Materials' },
-        { icon: <FaPalette />, name: 'Epoxy Decorative Flooring Materials' },
+        { icon: <FaLayerGroup />, name: 'Turf Adhesive' },
     ];
 
     const visibleProducts = showAll ? products : products.slice(0, 8);
@@ -39,8 +31,9 @@ const ProductCategories = () => {
                 </motion.h2>
 
                 <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
+                    display: 'flex',
+                    flexWrap: 'wrap',
+                    justifyContent: 'center',
                     gap: '2rem',
                     marginBottom: '3rem'
                 }}>
@@ -54,6 +47,8 @@ const ProductCategories = () => {
                                 exit={{ opacity: 0, scale: 0.8 }}
                                 transition={{ duration: 0.3 }}
                                 style={{
+                                    flex: '1 1 250px',
+                                    maxWidth: '400px',
                                     background: '#fff',
                                     padding: '2rem',
                                     borderRadius: '12px',
